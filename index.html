@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Szymon Pyzik">
+	<title>strona</title>
+	<style>
+	table, tr, td, th
+	{
+	border: 2px solid black;
+	color: white;
+	}
+	td
+	{
+	background-color: red;
+	}
+	th
+	{
+	background-color: blue;
+	}
+	</style>
+</head>
+<body>
+	<h2>podaj definicję a oraz jakie może mieć atrybuty wszystko co wiesz o a</h2>
+	
+	<dl>
+		<dt>&lt;a&gt;<dt>
+		<dd>
+			Jest to znacznik kontenerowy, który zamienia to, co się znajduje w nim<br>
+			(tekst, zdjęcie, itp) w "link" który po kliknięciu może gdzieś<br>
+			przekierować użytkownika. Jego główny atrybut to <code>href</code>.<br>
+			Atrybut ten wskazuje znacznikowi, gdzie ma przekierować użytkownika.<br>
+			Wartości tego znacznika może być między innymi:
+			<ul>
+				<li>linkiem URL,</li>
+				<li>linkiem do serwera ftp,</li>
+				<li>linkiem do pliku na dysku,</li>
+				<li>linkiem do email,</li>
+				<li>linkiem do obrazka,</li>
+				<li>"#" (przekierowanie na górę tej samej strony).</li>
+			</ul>
+		</dd>
+	</dl>
+	
+	<h2>tabelka</h2>
+	<table>
+		<tr>
+			<th>Nagłówek 1</th><th>Nagłówek 2</th><th>Nagłówek 3</th>
+		</tr>
+		<tr>
+			<td>Komórka 1.1</td><td colspan="2">
+				<table>
+					<tr>
+						<th>Nagłówek A</th><th>Nagłówek B</th>
+					</tr>
+					<tr>
+						<td>Komórka X</td><td>Komórka Y</td>
+					</tr>
+					<tr>
+						<td>Komórka Z</td><td>Komórka W</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>Komórka 2.1</td><td rowspan="2">Komórka 2.2</td><td>Komórka 2.3</td>
+		</tr>
+		<tr>
+			<td>Komórka 3.1</td><td>Komórka 3.2</td>
+		</tr>
+	</table>
+</body>
+</html>
+	
